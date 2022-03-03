@@ -2,10 +2,10 @@ import React from "react";
 
 import "./Meme.css";
 
-const Meme = ({ selectedMemeUrl, onClick }) => {
+const Meme = ({ selectedMemeUrl, onClick, download = false }) => {
   return (
-    <div>
-      <img src={selectedMemeUrl} onClick={onClick} />
+    <div className="meme_container">
+      <img src={selectedMemeUrl} onClick={onClick} download={download} />
     </div>
   );
 };

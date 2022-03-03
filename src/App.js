@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { saveAs } from "file-saver";
 
 import "./App.css";
 
@@ -39,33 +40,48 @@ const App = () => {
     console.log(json.data);
   };
 
+  const saveFile = () => {
+    saveAs(finalMeme.url);
+  };
+
   return (
-    <div>
+    <div className="App">
       {selectedMeme && (
         <div className="meme_selected">
-          <Meme selectedMemeUrl={selectedMeme.url} />
-          <form onSubmit={submit}>
-            <input
-              type="text"
-              name="topLabel"
-              value={topLabel}
-              onChange={(e) => {
-                setTopLabel(e.target.value);
-              }}
-              placeholder="Top Text"
-            />
-            <input
-              type="text"
-              name="bottomLabel"
-              value={bottomLabel}
-              onChange={(e) => {
-                setBottomLabel(e.target.value);
-              }}
-              placeholder="Bottom Text"
-            />
-            <button type="submit">Create Meme</button>
-          </form>
-          {finalMeme && <Meme selectedMemeUrl={finalMeme?.url} />}
+          <div className="create_meme">
+            <Meme selectedMemeUrl={selectedMeme.url} />
+            <form onSubmit={submit}>
+              <input
+                type="text"
+                name="topLabel"
+                value={topLabel}
+                onChange={(e) => {
+                  setTopLabel(e.target.value);
+                }}
+                placeholder="Top Text"
+              />
+              <input
+                type="text"
+                name="bottomLabel"
+                value={bottomLabel}
+                onChange={(e) => {
+                  setBottomLabel(e.target.value);
+                }}
+                placeholder="Bottom Text"
+              />
+              <button type="submit">Create Meme</button>
+            </form>
+          </div>
+          <div className="created_meme">
+            {finalMeme && (
+              <Meme selectedMemeUrl={finalMeme?.url} download={true} />
+            )}
+            <form>
+              <button type="button" onClick={saveFile}>
+                Download Meme
+              </button>
+            </form>
+          </div>
         </div>
       )}
       <div className="meme_list">
