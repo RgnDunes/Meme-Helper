@@ -1,5 +1,11 @@
 # Meme Helper | [Hosted Link](https://meme-helper.web.app/)
 
+## Tech Stack
+
+- ReactJS (Frontend)
+- Firestore (Backend)
+- Firebase (Hosting)
+
 ## Instructions
 
 - Clone/Fork/Download the zip.
