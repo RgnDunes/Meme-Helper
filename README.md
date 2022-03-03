@@ -21,3 +21,8 @@ Just click on the image and enter the text in the fields provided.
 <img width="1440" alt="Screenshot 2022-03-03 at 4 39 09 PM" src="https://user-images.githubusercontent.com/61814592/156554940-cd881bdf-89b2-41c6-a47b-104967afd1a7.png">
 <img width="1440" alt="Screenshot 2022-03-03 at 4 39 17 PM" src="https://user-images.githubusercontent.com/61814592/156554955-f31bd81d-08f5-4093-adb8-5d83f0b263ca.png">
 <img width="1440" alt="Screenshot 2022-03-03 at 4 39 29 PM" src="https://user-images.githubusercontent.com/61814592/156554963-7e30413e-454a-4607-b838-360a28284ee6.png">
+
+## Video recording
+
+https://user-images.githubusercontent.com/61814592/156557806-307cf40b-f8c3-430b-b0cb-d0c57879832d.mov
+
